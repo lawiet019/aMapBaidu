@@ -39,8 +39,8 @@ def gettingLocAndSave():
     write_wb.save("./result.xlsx")
 #主函数，主要的作用是加载有源数据的ServiceArea.xlsx以及保存数据的result.xlsx
 if __name__ =='__main__':
-    wb = load_workbook("../ServiceArea.xlsx")
-    write_wb = load_workbook("./result.xlsx")
+    wb = load_workbook("./doc/ServiceArea.xlsx")
+    write_wb = load_workbook("./doc/result.xlsx")
     sheet = wb['Sheet1']
     write_sheet = write_wb['Sheet1']
     for i in range(246,1523):#确定源数据所在的范围，即所在的列，第一位数-1
