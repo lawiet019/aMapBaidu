@@ -36,7 +36,7 @@ def gettingLocAndSave():
         row = [obj["oriAddress"]]
     print(row)
     write_sheet.append(row)
-    write_wb.save("./result.xlsx")
+    write_wb.save("./doc/result.xlsx")
 #主函数，主要的作用是加载有源数据的ServiceArea.xlsx以及保存数据的result.xlsx
 if __name__ =='__main__':
     wb = load_workbook("./doc/ServiceArea.xlsx")
